@@ -72,12 +72,14 @@ html {
   }
   
   .image-container {
+    height: auto;
     overflow: hidden;
   }
   
   .image-container img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   
   @media only screen and (max-width: 895px) {
@@ -151,18 +153,25 @@ html {
     }
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 690px) {
+    
+    .main-content {
+      top: 1rem;
+    }
+    
     header .desktop {
       display: none;
     }
   
     header .mobile {
-      display: block;
+      display: contents;
       width: 100%;
     }
   
     header .content {
       padding: .5rem 0;
+      background-color: #4a4a4a;
+      border-bottom: none;
     }
   
     header .mobile ul {
@@ -174,6 +183,8 @@ html {
   
     header .mobile li {
       padding: 0;
+      color: #9dc20b;
+      font-size: 28px;
     }
   }
   
@@ -270,6 +281,7 @@ html {
   @media only screen and (max-width: 600px) {
     #sign-up-section {
       height: 20rem;
+      border: none;
     }
   
     #sign-up-cta h1 {
@@ -278,83 +290,6 @@ html {
   
     #sign-up-cta h2 {
       font-size: 2rem;
-    }
-  }
-  
-  /* Features Section */
-  
-  #features-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 5%;
-    background-color: #f3f3f3;
-  }
-  
-  .feature {
-    flex: 1;
-    padding: 2rem;
-    margin: 0px 1.25rem;
-    background-color: white;
-  }
-  
-  .feature .image-container {
-    width: 90%;
-    height: 65%;
-    margin: 0 auto;
-  }
-  
-  .feature .content {
-    padding: 2.5rem 0;
-  }
-  
-  .feature h2 {
-    padding-bottom: .5rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: #4a4a4a;
-  }
-  
-  .feature h3 {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #4a4a4a;
-  }
-  
-  @media only screen and (max-width: 895px) {
-    #features-section {
-      padding: 1rem;
-    }
-  
-    .feature {
-      margin: 0px .5rem;
-      padding: 1rem;
-    }
-  
-    .feature h2 {
-      font-size: 2rem;
-      line-height: 1.3;
-    }
-  
-    .feature h3 {
-      font-size: .875rem;
-      line-height: 1.4;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    #features-section {
-      flex-flow: column;
-      padding: 0;
-    }
-  
-    .feature {
-      margin: 0;
-      padding: 1.25rem 1rem 0 1rem;
-    }
-  
-    .feature .content {
-      padding: 1.25rem 0 1.875rem 0;
     }
   }
   
@@ -402,6 +337,7 @@ html {
     height: 50px;
     vertical-align: middle;
     font-weight: 700;
+    padding: 20px 10px;
   }
   
   .left {
@@ -409,6 +345,7 @@ html {
     width: 300px;
     text-align: left;
     vertical-align: middle;
+    padding: 3px 5px;
   }
 
   .middle {
@@ -416,12 +353,14 @@ html {
     width: 300px;
     text-align: center;
     vertical-align: middle;
+    padding: 3px 5px;
   }
 
   .right {
     border: 2px solid #8c6b48;
     width: 300px;
     text-align: left;
+    padding: 3px 5px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -454,6 +393,83 @@ html {
     }
   }
   
+    /* Features Section */
+  
+    #features-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem 5%;
+      background-color: #f3f3f3;
+    }
+    
+    .feature {
+      flex: 1;
+      padding: 1rem;
+      margin: 0px 1.25rem;
+      background-color: white;
+    }
+    
+    .feature .image-container {
+      width: 90%;
+      height: 65%;
+      margin: 0 auto;
+    }
+    
+    .feature .content {
+      padding: 2.5rem 0;
+    }
+    
+    .feature h2 {
+      padding-bottom: .5rem;
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+    
+    .feature h3 {
+      font-size: 1rem;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #4a4a4a;
+    }
+    
+    @media only screen and (max-width: 895px) {
+      #features-section {
+        padding: 1rem;
+      }
+    
+      .feature {
+        margin: 0px .5rem;
+        padding: 1rem;
+      }
+    
+      .feature h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+    
+      .feature h3 {
+        font-size: .875rem;
+        line-height: 1.4;
+      }
+    }
+    
+    @media only screen and (max-width: 600px) {
+      #features-section {
+        flex-flow: column;
+        padding: 0;
+      }
+    
+      .feature {
+        margin: 0;
+        padding: 1.25rem 1rem 0 1rem;
+      }
+    
+      .feature .content {
+        padding: 1.25rem 0 1.875rem 0;
+      }
+    }
+
   /* Quotes Section */
   
   #quotes-section {
@@ -464,7 +480,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
   
   #quotes-section .quote {
@@ -523,6 +539,6 @@ html {
   
   @media only screen and (max-width: 600px) {
     footer .content {
-      font-size: .625rem;
+      font-size: 1rem;
     }
   }

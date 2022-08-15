@@ -515,22 +515,23 @@ html {
   }
 
   #contact .reachout {
-    background-color: white
-    /* padding: 2rem 2rem; */
+    background-color: #4a4a4a;
+    padding: 2rem 2rem;
   }
 
   #contact .copyright {
     color: white;
     font-size: 1.5rem;
+    text-align: center;
   }
 
   #contact .location {
     color: white;
     font-size: 1.5rem;
-    float: right;
+    text-align: center;
   }
   
-  @media only screen and (max-width: 700px) {
+  /* @media only screen and (max-width: 700px) {
 
     #contact {
       width: 100%;
@@ -543,13 +544,13 @@ html {
     
     #contact .copyright {
       text-align: center;
-      color: black;
+      color: white;
       border: none;
     }
   
     #contact .location {
       text-align: center;
-      color: black;
+      color: white;
       border: none;
     }
-    }
+    } */

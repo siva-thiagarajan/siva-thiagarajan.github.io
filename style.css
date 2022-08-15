@@ -134,9 +134,11 @@ html {
 
     
     .main-content {
-      /* top: 2rem; */
       width: 100%;
-      position: fixed;
+    }
+
+    body {
+      position: absolute;
     }
     
     header .desktop {

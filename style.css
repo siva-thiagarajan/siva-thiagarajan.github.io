@@ -515,7 +515,7 @@ html {
   }
 
   #contact .reachout {
-    background-color: #4a4a4a;
+    background-color: white
     /* padding: 2rem 2rem; */
   }
 
@@ -543,10 +543,13 @@ html {
     
     #contact .copyright {
       text-align: center;
+      color: black;
+      border: none;
     }
   
     #contact .location {
       text-align: center;
-      z-index: 5;
+      color: black;
+      border: none;
     }
     }

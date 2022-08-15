@@ -530,27 +530,18 @@ html {
     font-size: 1.5rem;
     text-align: center;
   }
-  
-  /* @media only screen and (max-width: 700px) {
 
-    #contact {
-      width: 100%;
-    }
-
+  @media only screen and (max-width: 700px) {
     #contact .reachout {
-      display: flex;
-      flex-direction: column;
+      background-color: white;
     }
-    
+  
     #contact .copyright {
-      text-align: center;
-      color: white;
-      border: none;
+      color: black;
     }
   
     #contact .location {
-      text-align: center;
-      color: white;
-      border: none;
+      color: black;
     }
-    } */
+  }
+  
